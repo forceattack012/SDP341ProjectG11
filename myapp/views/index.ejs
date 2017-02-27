@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+    crossorigin="anonymous">
+
+  </head>
+  
+  <body>
+    <div class = "jumbotron">
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <a class = "btn btn-danger"  href="/about">Click to about</a>
+    <a class = "btn btn-danger"  href="/page1">Click to page1</a>
+    <a class = "btn btn-danger"  href="/page2">Click to page2</a>
+    
+      <div class = "row" style="padding-top : 20px;">
+              <form class="form-inline" action="/page1" method="POST">
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputEmail3">Email address</label>
+              <input type="email" class="form-control" name="email" id="exampleInputEmail3" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputPassword3">Password</label>
+              <input type="password" class="form-control" name="password" id="exampleInputPassword3" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Sign in</button>
+              </form>
+      </div>
+
+  </div>
+  </body>
+</html>
